@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CME_XNA_Tutorial", "CME_XNA_Tutorial\CME_XNA_Tutorial\CME_XNA_Tutorial.csproj", "{1C250538-B882-499D-A2DB-0EA02E845296}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "CME_XNA_TutorialContent", "CME_XNA_Tutorial\CME_XNA_TutorialContent\CME_XNA_TutorialContent.contentproj", "{71E554A8-34A9-4B8D-9D00-FA4C730FE205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C250538-B882-499D-A2DB-0EA02E845296}.Debug|x86.ActiveCfg = Debug|x86
+		{1C250538-B882-499D-A2DB-0EA02E845296}.Debug|x86.Build.0 = Debug|x86
+		{1C250538-B882-499D-A2DB-0EA02E845296}.Release|x86.ActiveCfg = Release|x86
+		{1C250538-B882-499D-A2DB-0EA02E845296}.Release|x86.Build.0 = Release|x86
+		{71E554A8-34A9-4B8D-9D00-FA4C730FE205}.Debug|x86.ActiveCfg = Debug|x86
+		{71E554A8-34A9-4B8D-9D00-FA4C730FE205}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
