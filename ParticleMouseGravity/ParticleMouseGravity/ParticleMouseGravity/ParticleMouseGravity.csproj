@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{F79185C5-D65B-46F6-9BE9-1898E89E22E2}</ProjectGuid>
+    <ProjectGuid>{9F27882F-73E0-49CC-956E-679B121D3974}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Breakout</RootNamespace>
-    <AssemblyName>Breakout</AssemblyName>
+    <RootNamespace>ParticleMouseGravity</RootNamespace>
+    <AssemblyName>ParticleMouseGravity</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>Reach</XnaProfile>
-    <XnaCrossPlatformGroupID>4feb1b0d-da8a-43b6-b57d-b8d5745d6dda</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>1ca51424-2dfc-410b-879f-abfe93987afc</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -57,7 +57,6 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ball.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
@@ -69,8 +68,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BreakoutContent\BreakoutContent.contentproj">
-      <Name>BreakoutContent</Name>
+    <ProjectReference Include="..\ParticleMouseGravityContent\ParticleMouseGravityContent.contentproj">
+      <Name>ParticleMouseGravityContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

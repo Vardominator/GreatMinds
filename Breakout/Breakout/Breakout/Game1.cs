@@ -31,6 +31,11 @@ namespace Breakout
         int screenWidth;
         int screenHeight;
 
+        // Hitboxes
+        Rectangle hitboxPaddle;
+        Rectangle hitboxBall;
+        int ballSpeedX = 3;
+        int ballSpeedY = 3;
 
         KeyboardState keyState;
 
@@ -39,7 +44,6 @@ namespace Breakout
 
             graphics = new GraphicsDeviceManager(this); //Initialize graphics object
             Content.RootDirectory = "Content";          //Specify content directory
-
 
             // Instantiate vectors
             paddlePosition = new Vector2();
@@ -81,7 +85,9 @@ namespace Breakout
             soccerballPosition.X = 30;
             soccerballPosition.Y = 30;
 
-            
+            hitboxPaddle = new Rectangle((int)paddlePosition.X, (int)paddlePosition.Y, paddle.Width, paddle.Height);
+            hitboxBall = new Rectangle((int)soccerballPosition.X, (int)soccerballPosition.Y, soccerball.Width, soccerball.Height);
+
         }
 
         // Unloads content at the end of the game
@@ -104,8 +110,39 @@ namespace Breakout
             HandleKeyState();
 
 
-            soccerballPosition.X += 3;
-            soccerballPosition.Y += 3;
+
+            // Move soccer ball
+            soccerballPosition.X += ballSpeedX;
+            soccerballPosition.Y += ballSpeedY;
+            
+            if(soccerballPosition.X < 0 || soccerballPosition.X + soccerball.Width > screenWidth)
+            {
+                ballSpeedX = -ballSpeedX;
+            }
+            if(soccerballPosition.Y < 0 || soccerballPosition.Y + soccerball.Height > screenHeight)
+            {
+                ballSpeedY = -ballSpeedY;
+            }
+
+            // Update hitboxes
+            hitboxBall.X = (int)soccerballPosition.X;
+            hitboxBall.Y = (int)soccerballPosition.Y;
+            hitboxPaddle.X = (int)paddlePosition.X;
+            hitboxPaddle.Y = (int)paddlePosition.Y;
+
+            // if ball intersects with paddle
+            if (hitboxBall.Intersects(hitboxPaddle))
+            {
+                if()
+                {
+                    ballSpeedX = -ballSpeedX;
+                }
+                else
+                {
+                    ballSpeedY = -ballSpeedY;
+                }
+            }
+
 
             // TODO: Add your update logic here
 
